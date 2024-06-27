@@ -7,11 +7,9 @@ Stuff that happened
 -did github stuff!
 
 #pipe character for table
-| Month    | Savings |
+| Name   | Description |
 | -------- | ------- |
-| January  | $250    |
-| February | $80     |
-| March    | $420    |
+| Veronica Pagowski  | add some info here   |
 
 - stuff
 * more stuff
