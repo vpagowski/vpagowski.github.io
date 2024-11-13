@@ -4,23 +4,37 @@
     text-align: center;
     position: relative;
     z-index: 1000;
-    background-color: var(--bg)
+    background-color: var(--bg);
+    overflow: hidden; /* Prevent content from spilling out */
 }
 
 .animated-text {
     width: 100%;
-    max-width: 500px;
+    max-width: 100%; /* Changed from 500px to 100% */
     height: auto;
+    display: inline-block; /* Helps with centering */
 }
 
 .animated-text text {
     font-family: 'Brush Script MT', cursive;
-    font-size: 70px;
+    font-size: 10vw; /* Use viewport width unit */
     fill: none;
-    stroke-width: 2.3px;
+    stroke-width: 2px; /* Slightly reduced for better visibility on small screens */
     stroke-dasharray: 500;
     stroke-dashoffset: 500;
     animation: write 2s linear forwards;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .animated-text {
+        max-width: 500px; /* Return to original max-width for larger screens */
+    }
+
+    .animated-text text {
+        font-size: 70px; /* Return to original font size for larger screens */
+        stroke-width: 2.3px; /* Return to original stroke width */
+    }
 }
 
 @keyframes write {
@@ -110,24 +124,15 @@ html, body {
 
 /* Background image only for the specific post */
 body.specific-post {
-    background-image: url('/images/star.jpg'); /* Path to your background image */
-    background-size: cover; /* Cover the entire viewport */
-    background-repeat: no-repeat; /* Prevent tiling */
-    background-position: center; /* Center the image */
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Additional styles for content if needed */
 .post-content {
-    color: white; /* Change text color for visibility */
     padding: 20px; /* Add padding for better readability */
-}
-.white-text {
-    color: white; /* Set text color to white */
-}
-
-/* If you want all text within post-background to be white */
-.post-background p {
-    color: white; /* Set all paragraph text within post-background to white */
 }
 
 .custom-quote {
