@@ -1,5 +1,7 @@
 ---
 layout: post
+author: Veronica Pagowski
+title: "Coming Soon"
 ---
 
 {% raw %}
