@@ -9,7 +9,7 @@ navbar_entries:
     url: overview-post
 
   - title: Code
-    url: Posted-Code
+    url: overview-post2
 
 project_entries:
   - title: Population Genomics of Bat Stars
