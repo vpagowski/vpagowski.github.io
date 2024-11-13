@@ -1,0 +1,138 @@
+.animated-header {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    background-color: var(--bg)
+}
+
+.animated-text {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.animated-text text {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 70px;
+    fill: none;
+    stroke-width: 2.3px;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: write 2s linear forwards;
+}
+
+@keyframes write {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Text color for dark mode */
+html[data-theme="dark"] .animated-text text {
+    stroke: #52a8b0; /* Fill color for dark mode */
+}
+
+/* Text color for light mode */
+html[data-theme="light"] .animated-text text {
+    stroke: #000000; /* Fill color for light mode */
+}
+
+
+/* Adjust main content to prevent overlap */
+.page-content {
+    padding-top: 80px;
+}
+
+ul.horizontal-list {
+  display: flex;
+  //justify-content: space-between;
+  margin-top: 0em;
+  margin-left: -40px;
+  flex-wrap: wrap;
+
+  li {
+    display:inline;
+    margin-right: 1em;
+  }
+
+  li a {
+    text-decoration: none;
+    font-weight: normal
+  }
+
+}
+
+.card {
+  padding: 1em;
+  border: 1.5px var(--text) solid;
+  width: 90%;
+  height: auto;
+  text-align: center;
+  font-size: 1.2em;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  margin-bottom: 0.8em;
+  border-radius: 0em;
+
+  .header {
+    color: var(--links);
+  }
+
+  .body {
+    font-size: 0.8em;
+  }
+
+  hr {
+    margin: 0.9em 3;
+  }
+
+}
+
+/* Responsive cards - one column layout on small screens */
+@media screen and (max-width: 600px) {
+  ul.horizontal-list li.card {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    a, .header {
+      font-size: 1em;
+    }
+  }
+}
+
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Background image only for the specific post */
+body.specific-post {
+    background-image: url('/images/star.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: center; /* Center the image */
+}
+
+/* Additional styles for content if needed */
+.post-content {
+    color: white; /* Change text color for visibility */
+    padding: 20px; /* Add padding for better readability */
+}
+.white-text {
+    color: white; /* Set text color to white */
+}
+
+/* If you want all text within post-background to be white */
+.post-background p {
+    color: white; /* Set all paragraph text within post-background to white */
+}
+
+.custom-quote {
+    margin: 20px 0; /* Adjust top and bottom margins */
+    padding: 15px; /* Optional: Add padding inside the blockquote */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Add a light background for visibility */
+    border-left: 4px solid #ccc; /* Optional: Add a left border for style */
+}
