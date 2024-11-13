@@ -3,31 +3,31 @@ name: Build and deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Change this to your default branch if it's not 'main'
 
 jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/cache@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1' # or whatever version you're using
+          ruby-version: '3.1'  # Adjust based on your Ruby version
           bundler-cache: true
+
       - name: Install dependencies
         run: |
           bundle install
+
       - name: Build site
         run: |
           bundle exec jekyll build
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./_site
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Use the built-in token for authentication
+          publish_dir: ./_site  # This should match your Jekyll build output directory
