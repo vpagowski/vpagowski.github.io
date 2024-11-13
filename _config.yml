@@ -6,12 +6,11 @@ description: "I am a PhD candidate at Hopkins Marine Station, Stanford Universit
 
 Beyond my core research, I am passionate about the intersections of science with policy, art, and education. I enjoy combining creative and analytical skillsets and visualizing complex scientific concepts by making nuance beautiful and accessible through creative communication."
 
-permalink: /:slug
-
 favicon: "./logo.png" # relative path to site's favicon
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
+markdown: kramdown
 
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
