@@ -6,10 +6,10 @@ navbar_entries:
     url: /assets/pdf/CV.pdf
 
   - title: Art
-    url: /2024/11/13/overview-post
+    url: "{{ site.baseurl }}/2024/11/13/overview-post"
 
   - title: Code
-    url: /overview-post2/
+    url: "{{ site.baseurl }}/2024/11/13/overview-post2/"
 
 project_entries:
   - title: Population Genomics of Bat Stars
