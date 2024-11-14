@@ -1,3 +1,18 @@
+/* Background image only for the specific post */
+body.specific-post {
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.custom-quote {
+    margin: 20px 0; /* Adjust top and bottom margins */
+    padding: 15px; /* Optional: Add padding inside the blockquote */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Add a light background for visibility */
+    border-left: 4px solid #ccc; /* Optional: Add a left border for style */
+}
+
 .animated-header {
     width: 100%;
     padding: 20px 0;
@@ -120,24 +135,4 @@ ul.horizontal-list {
 html, body {
     height: 100%; /* Ensure full height */
     margin: 0; /* Remove default margin */
-}
-
-/* Background image only for the specific post */
-body.specific-post {
-  background-image: var(--bg-image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Additional styles for content if needed */
-.post-content {
-    padding: 20px; /* Add padding for better readability */
-}
-
-.custom-quote {
-    margin: 20px 0; /* Adjust top and bottom margins */
-    padding: 15px; /* Optional: Add padding inside the blockquote */
-    background-color: rgba(255, 255, 255, 0.1); /* Optional: Add a light background for visibility */
-    border-left: 4px solid #ccc; /* Optional: Add a left border for style */
 }

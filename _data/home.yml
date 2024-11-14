@@ -6,22 +6,22 @@ navbar_entries:
     url: /assets/pdf/CV.pdf
 
   - title: Art
-    url: overview-post
+    url: /2024/11/13/overview-post
 
   - title: Code
-    url: overview-post2
+    url: /overview-post2/
 
 project_entries:
   - title: Population Genomics of Bat Stars
-    url: Population-Genomics-of-Bat-Stars
+    url: /2024/11/13/Population-Genomics-of-Bat-Stars
     desc: My current research focuses on marine population genetics and I primarily study the bat star <em>Patiria miniata</em>. This species has an extensive range along our North Pacific coastline, encompassing a genetic break, oceanographic discontinuities, and a range gap. These characteristics make <em>P. miniata</em> an interesting species to investigate how evolutionary history and contemporary environmental factors shape genetic structure in marine populations. By using old and new tissue samples, part of my work also aims to examine the potential genetic impacts of sea star wasting disease, which impacted many sea star species in 2013 and 2014.
 
   - title: Review of Coastal Disjunctions in Marine Species
-    url: Review-of-Coastal-Disjunctions-in-Marine-Species
+    url: /2024/11/13/Review-of-Coastal-Disjunctions-in-Marine-Species
     desc: This project synthesized key research papers to provide an overview of the field of population genetics and biogeography, with a focus on disjunctions (both genetic and spatial) in marine species. It aimed to create an accessible resource for newcomers to the field, offering foundational insights and context that support my current research. By distilling complex concepts and highlighting pivotal studies.
 
   - title: Imaging and Identification of Larval Neurons
-    url: Imaging-and-Identification-of-Larval-Neurons
+    url: /2024/11/13/Imaging-and-Identification-of-Larval-Neurons
     desc: This project aimed to identify where different neural subtypes are found in <em>P. miniata</em> larvae and build hypotheses about what they do. The primary finding was that the distribution of different subtypes is patchy, with different groups of neurons found in specific sections of a ciliary band (tiny hairs used by these larvae to move). These likely contribute to different complex behavioral motifs these larvae have. Broadly, this project contributes to my interest in how tiny larvae regulate behaviors in the complex environment of the open ocean. This was followed up with drug treatments to see if certain neural subtypes impact behavior differently. While not yet published, preliminary results suggested that some drug treatments, targeting neural subtypes found within the ciliary band, induce opposing behavioral repertoires.
 
 footer_entries:
