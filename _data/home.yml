@@ -14,7 +14,7 @@ navbar_entries:
 
 project_entries:
   - title: Population Genomics of Bat Stars
-    url: Population-Genomics-of-Bat-Stars
+    url: overview-post
     desc: My current research focuses on marine population genetics and I primarily study the bat star <em>Patiria miniata</em>. This species has an extensive range along our North Pacific coastline, encompassing a genetic break, oceanographic discontinuities, and a range gap. These characteristics make <em>P. miniata</em> an interesting species to investigate how evolutionary history and contemporary environmental factors shape genetic structure in marine populations. By using old and new tissue samples, part of my work also aims to examine the potential genetic impacts of sea star wasting disease, which impacted many sea star species in 2013 and 2014.
 
   - title: Review of Coastal Disjunctions in Marine Species
